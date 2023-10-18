@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import './hovertree';
 import styles from './style';
 import {
   Navbar,
@@ -17,15 +16,18 @@ import {
 
 const App = () => {
   return (
-    <div className='header bg-primary w-full overflow-hidden'>
+    <div className=' bg-primary w-full overflow-hidden'>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar />
         </div>
-        
       </div>
 
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+      <div className={
+          `bg-primary ${styles.paddingX}
+          ${styles.flexStart}`
+        }
+      >
         <div className={`${styles.boxWidth}`}>
           <Hero />
         </div>
