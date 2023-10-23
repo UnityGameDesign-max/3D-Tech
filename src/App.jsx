@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './hovertree';
 import styles from './style';
 import {
   Navbar,
@@ -16,21 +17,18 @@ import {
 
 const App = () => {
   return (
-    <div className=' bg-primary w-full overflow-hidden'>
+    <div className='canvas-hover header bg-primary w-full overflow-hidden'>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar />
         </div>
       </div>
 
-      <div className={
-          `bg-primary ${styles.paddingX}
-          ${styles.flexStart}`
-        }
-      >
+      <div className={`${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Hero />
         </div>
+        <canvas id='canvas'></canvas>
       </div>
 
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
@@ -45,7 +43,6 @@ const App = () => {
           <Footer />
         </div>
       </div>
-
     </div>
   )
 }
